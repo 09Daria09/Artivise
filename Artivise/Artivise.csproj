@@ -1,0 +1,174 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="img\**" />
+    <EmbeddedResource Remove="img\**" />
+    <None Remove="img\**" />
+    <Page Remove="img\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Avatar\1.jpg" />
+    <None Remove="Avatar\10.jpg" />
+    <None Remove="Avatar\11.jpg" />
+    <None Remove="Avatar\12.jpg" />
+    <None Remove="Avatar\13.jpg" />
+    <None Remove="Avatar\14.jpg" />
+    <None Remove="Avatar\15.jpg" />
+    <None Remove="Avatar\16.jpg" />
+    <None Remove="Avatar\17.jpg" />
+    <None Remove="Avatar\18.jpg" />
+    <None Remove="Avatar\19.jpg" />
+    <None Remove="Avatar\2.jpg" />
+    <None Remove="Avatar\20.jpg" />
+    <None Remove="Avatar\21.jpg" />
+    <None Remove="Avatar\22.jpg" />
+    <None Remove="Avatar\23.jpg" />
+    <None Remove="Avatar\24.jpg" />
+    <None Remove="Avatar\25.jpg" />
+    <None Remove="Avatar\26.jpg" />
+    <None Remove="Avatar\27.jpg" />
+    <None Remove="Avatar\28.jpg" />
+    <None Remove="Avatar\29.jpg" />
+    <None Remove="Avatar\3.jpg" />
+    <None Remove="Avatar\30.jpg" />
+    <None Remove="Avatar\31.jpg" />
+    <None Remove="Avatar\32.jpg" />
+    <None Remove="Avatar\33.jpg" />
+    <None Remove="Avatar\34.jpg" />
+    <None Remove="Avatar\35.jpg" />
+    <None Remove="Avatar\36.jpg" />
+    <None Remove="Avatar\37.jpg" />
+    <None Remove="Avatar\38.jpg" />
+    <None Remove="Avatar\39.jpg" />
+    <None Remove="Avatar\4.jpg" />
+    <None Remove="Avatar\40.jpg" />
+    <None Remove="Avatar\41.jpg" />
+    <None Remove="Avatar\42.jpg" />
+    <None Remove="Avatar\43.jpg" />
+    <None Remove="Avatar\44.jpg" />
+    <None Remove="Avatar\45.jpg" />
+    <None Remove="Avatar\5.jpg" />
+    <None Remove="Avatar\6.jpg" />
+    <None Remove="Avatar\7.jpg" />
+    <None Remove="Avatar\8.jpg" />
+    <None Remove="Avatar\9.jpg" />
+    <None Remove="icon.png" />
+    <None Remove="Images\Impressionism\1.jpg" />
+    <None Remove="Images\Impressionism\10.jpg" />
+    <None Remove="Images\Impressionism\11.jpg" />
+    <None Remove="Images\Impressionism\12.jpg" />
+    <None Remove="Images\Impressionism\13.jpg" />
+    <None Remove="Images\Impressionism\14.jpg" />
+    <None Remove="Images\Impressionism\15.jpg" />
+    <None Remove="Images\Impressionism\16.jpg" />
+    <None Remove="Images\Impressionism\17.jpg" />
+    <None Remove="Images\Impressionism\18.jpg" />
+    <None Remove="Images\Impressionism\19.jpg" />
+    <None Remove="Images\Impressionism\2.jpg" />
+    <None Remove="Images\Impressionism\20.jpg" />
+    <None Remove="Images\Impressionism\21.jpg" />
+    <None Remove="Images\Impressionism\22.jpg" />
+    <None Remove="Images\Impressionism\23.jpg" />
+    <None Remove="Images\Impressionism\24.jpg" />
+    <None Remove="Images\Impressionism\25.jpg" />
+    <None Remove="Images\Impressionism\25.png" />
+    <None Remove="Images\Impressionism\26.jpg" />
+    <None Remove="Images\Impressionism\3.jpg" />
+    <None Remove="Images\Impressionism\4.jpg" />
+    <None Remove="Images\Impressionism\5.jpg" />
+    <None Remove="Images\Impressionism\6.jpg" />
+    <None Remove="Images\Impressionism\7.jpg" />
+    <None Remove="Images\Impressionism\8.jpg" />
+    <None Remove="Images\Impressionism\9.jpg" />
+    <None Remove="Images\Impressionism\Impressionism.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Avatar\1.jpg" />
+    <Resource Include="Avatar\10.jpg" />
+    <Resource Include="Avatar\11.jpg" />
+    <Resource Include="Avatar\12.jpg" />
+    <Resource Include="Avatar\13.jpg" />
+    <Resource Include="Avatar\14.jpg" />
+    <Resource Include="Avatar\15.jpg" />
+    <Resource Include="Avatar\16.jpg" />
+    <Resource Include="Avatar\17.jpg" />
+    <Resource Include="Avatar\18.jpg" />
+    <Resource Include="Avatar\19.jpg" />
+    <Resource Include="Avatar\2.jpg" />
+    <Resource Include="Avatar\20.jpg" />
+    <Resource Include="Avatar\21.jpg" />
+    <Resource Include="Avatar\22.jpg" />
+    <Resource Include="Avatar\23.jpg" />
+    <Resource Include="Avatar\24.jpg" />
+    <Resource Include="Avatar\25.jpg" />
+    <Resource Include="Avatar\26.jpg" />
+    <Resource Include="Avatar\27.jpg" />
+    <Resource Include="Avatar\28.jpg" />
+    <Resource Include="Avatar\29.jpg" />
+    <Resource Include="Avatar\3.jpg" />
+    <Resource Include="Avatar\30.jpg" />
+    <Resource Include="Avatar\31.jpg" />
+    <Resource Include="Avatar\32.jpg" />
+    <Resource Include="Avatar\33.jpg" />
+    <Resource Include="Avatar\34.jpg" />
+    <Resource Include="Avatar\35.jpg" />
+    <Resource Include="Avatar\36.jpg" />
+    <Resource Include="Avatar\37.jpg" />
+    <Resource Include="Avatar\38.jpg" />
+    <Resource Include="Avatar\39.jpg" />
+    <Resource Include="Avatar\4.jpg" />
+    <Resource Include="Avatar\40.jpg" />
+    <Resource Include="Avatar\41.jpg" />
+    <Resource Include="Avatar\42.jpg" />
+    <Resource Include="Avatar\43.jpg" />
+    <Resource Include="Avatar\44.jpg" />
+    <Resource Include="Avatar\45.jpg" />
+    <Resource Include="Avatar\5.jpg" />
+    <Resource Include="Avatar\6.jpg" />
+    <Resource Include="Avatar\7.jpg" />
+    <Resource Include="Avatar\8.jpg" />
+    <Resource Include="Avatar\9.jpg" />
+    <Resource Include="icon.png" />
+    <Resource Include="Images\Impressionism\1.jpg" />
+    <Resource Include="Images\Impressionism\10.jpg" />
+    <Resource Include="Images\Impressionism\11.jpg" />
+    <Resource Include="Images\Impressionism\12.jpg" />
+    <Resource Include="Images\Impressionism\13.jpg" />
+    <Resource Include="Images\Impressionism\14.jpg" />
+    <Resource Include="Images\Impressionism\15.jpg" />
+    <Resource Include="Images\Impressionism\16.jpg" />
+    <Resource Include="Images\Impressionism\17.jpg" />
+    <Resource Include="Images\Impressionism\18.jpg" />
+    <Resource Include="Images\Impressionism\19.jpg" />
+    <Resource Include="Images\Impressionism\2.jpg" />
+    <Resource Include="Images\Impressionism\20.jpg" />
+    <Resource Include="Images\Impressionism\21.jpg" />
+    <Resource Include="Images\Impressionism\22.jpg" />
+    <Resource Include="Images\Impressionism\23.jpg" />
+    <Resource Include="Images\Impressionism\24.jpg" />
+    <Resource Include="Images\Impressionism\25.jpg" />
+    <Resource Include="Images\Impressionism\26.jpg" />
+    <Resource Include="Images\Impressionism\3.jpg" />
+    <Resource Include="Images\Impressionism\4.jpg" />
+    <Resource Include="Images\Impressionism\5.jpg" />
+    <Resource Include="Images\Impressionism\6.jpg" />
+    <Resource Include="Images\Impressionism\7.jpg" />
+    <Resource Include="Images\Impressionism\8.jpg" />
+    <Resource Include="Images\Impressionism\9.jpg" />
+    <EmbeddedResource Include="Images\Impressionism\Impressionism.json" />
+  </ItemGroup>
+
+</Project>
