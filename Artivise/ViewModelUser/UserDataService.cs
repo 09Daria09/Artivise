@@ -6,6 +6,7 @@ using System;
 using Artivise.Model;
 using System.Windows;
 using System.Reflection;
+using System.Linq;
 
 namespace Artivise.Services
 {
@@ -21,6 +22,10 @@ namespace Artivise.Services
 
         private void CopyResourceToFile(string resourcePath, string localFilePath)
         {
+            var assembly = Assembly.GetExecutingAssembly();
+            var resourceNames = assembly.GetManifestResourceNames();
+            var resourceFullName = resourceNames.FirstOrDefault(rn => rn.EndsWith(resourcePath, StringComparison.OrdinalIgnoreCase));
+
             var directory = Path.GetDirectoryName(localFilePath);
             if (!Directory.Exists(directory))
             {
@@ -29,14 +34,11 @@ namespace Artivise.Services
 
             if (!File.Exists(localFilePath))
             {
-                // Проверяем, является ли путь ресурса валидным для существующего в сборке ресурса
-                var resourceUri = new Uri($"pack://application:,,,/Artivise;component/{resourcePath}", UriKind.Absolute);
-                StreamResourceInfo streamInfo = Application.GetResourceStream(resourceUri);
-
-                if (streamInfo != null)
+                if (resourceFullName != null)
                 {
                     // Если ресурс найден в сборке, копируем его содержимое
-                    using (var reader = new StreamReader(streamInfo.Stream))
+                    using (var stream = assembly.GetManifestResourceStream(resourceFullName))
+                    using (var reader = new StreamReader(stream))
                     using (var writer = new StreamWriter(localFilePath))
                     {
                         writer.Write(reader.ReadToEnd());
@@ -44,11 +46,12 @@ namespace Artivise.Services
                 }
                 else
                 {
-                    // Если ресурса нет, создаем файл с начальным содержимым (например, пустым JSON-массивом)
+                    // Если ресурса нет, создаем файл с начальным содержимым
                     File.WriteAllText(localFilePath, "[]");
                 }
             }
         }
+
 
         public List<UserData> ReadUsers()
         {
