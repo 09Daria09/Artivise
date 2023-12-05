@@ -5,6 +5,7 @@ using System.Windows.Resources;
 using System;
 using Artivise.Model;
 using System.Windows;
+using System.Reflection;
 
 namespace Artivise.Services
 {

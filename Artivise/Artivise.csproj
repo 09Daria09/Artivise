@@ -89,6 +89,7 @@
     <None Remove="Images\Impressionism\8.jpg" />
     <None Remove="Images\Impressionism\9.jpg" />
     <None Remove="Images\Impressionism\Impressionism.json" />
+    <None Remove="user.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -169,6 +170,7 @@
     <Resource Include="Images\Impressionism\8.jpg" />
     <Resource Include="Images\Impressionism\9.jpg" />
     <EmbeddedResource Include="Images\Impressionism\Impressionism.json" />
+    <EmbeddedResource Include="user.json" />
   </ItemGroup>
 
 </Project>
