@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         WindowState="Maximized"
         Title="GalleryWindow" MinHeight="420" MinWidth="450" Icon="/icon.png">
-    
-    
+
+
     <Window.Resources>
         <interfaces_services:RatingToBooleanConverter x:Key="RatingToBooleanConverter"/>
-        
+
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
-        
-        
+
+
         <Style TargetType="Button" x:Key="ButtonStyle">
             <Setter Property="Background" Value="#FF4CAF50"/>
             <Setter Property="Foreground" Value="White"/>
@@ -40,7 +40,32 @@
             <Setter Property="Foreground" Value="#FF4CAF50"/>
             <Setter Property="Margin" Value="0,10,0,0"/>
         </Style>
+
+        <DataTemplate x:Key="RadioButtonContentTemplate">
+            <TextBlock Text="{Binding}" Foreground="{Binding Foreground, RelativeSource={RelativeSource AncestorType={x:Type RadioButton}}}"/>
+        </DataTemplate>
+
+        <Style x:Key="CustomRadioButtonStyle" TargetType="RadioButton">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Grid>
+                            <ContentPresenter HorizontalAlignment="Left" 
+                                          VerticalAlignment="Center" 
+                                          ContentTemplate="{StaticResource RadioButtonContentTemplate}"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsChecked" Value="True">
+                    <Setter Property="Foreground" Value="Yellow"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
     </Window.Resources>
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
@@ -61,11 +86,11 @@
                 </TextBlock.Effect>
             </TextBlock>
             <TextBlock Text="Rate the image" FontWeight="Bold" Margin="10" FontFamily="Comic Sans MS" FontSize="14" Foreground="White"/>
-            <RadioButton Content="Excellent (5)" IsChecked="{Binding CurrentRating, Converter={StaticResource RatingToBooleanConverter}, ConverterParameter=5}" Margin="5" FontFamily="Comic Sans MS" FontSize="12" Foreground="White"/>
-            <RadioButton Content="Good (4)" IsChecked="{Binding CurrentRating, Converter={StaticResource RatingToBooleanConverter}, ConverterParameter=4}" Margin="5" FontFamily="Comic Sans MS" FontSize="12" Foreground="White"/>
-            <RadioButton Content="Average (3)" IsChecked="{Binding CurrentRating, Converter={StaticResource RatingToBooleanConverter}, ConverterParameter=3}" Margin="5" FontFamily="Comic Sans MS" FontSize="12" Foreground="White"/>
-            <RadioButton Content="Poor (2)" IsChecked="{Binding CurrentRating, Converter={StaticResource RatingToBooleanConverter}, ConverterParameter=2}" Margin="5" FontFamily="Comic Sans MS" FontSize="12" Foreground="White"/>
-            <RadioButton Content="Very Poor (1)" IsChecked="{Binding CurrentRating, Converter={StaticResource RatingToBooleanConverter}, ConverterParameter=1}" Margin="5" FontFamily="Comic Sans MS" FontSize="12" Foreground="White"/>
+            <RadioButton Content="★ ★ ★ ★ ★" Style="{StaticResource CustomRadioButtonStyle}"  IsChecked="{Binding CurrentRating, Converter={StaticResource RatingToBooleanConverter}, ConverterParameter=5}" Margin="5" FontFamily="Comic Sans MS" FontSize="22"/>
+            <RadioButton Content="★ ★ ★ ★" Style="{StaticResource CustomRadioButtonStyle}" IsChecked="{Binding CurrentRating, Converter={StaticResource RatingToBooleanConverter}, ConverterParameter=4}" Margin="5" FontFamily="Comic Sans MS" FontSize="22"/>
+            <RadioButton Content="★ ★ ★" Style="{StaticResource CustomRadioButtonStyle}" IsChecked="{Binding CurrentRating, Converter={StaticResource RatingToBooleanConverter}, ConverterParameter=3}" Margin="5" FontFamily="Comic Sans MS" FontSize="22"/>
+            <RadioButton Content="★ ★" Style="{StaticResource CustomRadioButtonStyle}" IsChecked="{Binding CurrentRating, Converter={StaticResource RatingToBooleanConverter}, ConverterParameter=2}" Margin="5" FontFamily="Comic Sans MS" FontSize="22"/>
+            <RadioButton Content="★" Style="{StaticResource CustomRadioButtonStyle}" IsChecked="{Binding CurrentRating, Converter={StaticResource RatingToBooleanConverter}, ConverterParameter=1}" Margin="5" FontFamily="Comic Sans MS" FontSize="22"/>
 
             <TextBlock Text="{Binding CurrentImageRating, StringFormat='Current Rating: {0:F1}'}" FontWeight="Bold" Margin="10" FontFamily="Comic Sans MS" FontSize="14" Foreground="White"/>
             <StackPanel Margin="3">
