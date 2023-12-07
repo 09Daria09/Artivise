@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Artivise" xmlns:interfaces_services="clr-namespace:Artivise.Interfaces_Services"
         mc:Ignorable="d"
         WindowState="Maximized"
-        Title="GalleryWindow" MinHeight="420" MinWidth="450" Icon="/icon.png">
+        Title="GalleryWindow" MinHeight="500" MinWidth="450" Icon="/icon.png">
 
 
     <Window.Resources>

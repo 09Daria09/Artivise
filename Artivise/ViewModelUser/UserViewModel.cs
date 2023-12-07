@@ -56,9 +56,6 @@ namespace Artivise.ViewModel
             this.messageService = messageService;
             this.closeable = closeable;
 
-            //
-            User.Password = "1212";
-            User.UserName = "Daria_09";
             
         }
         private bool CanExecuteClose(object obj)
