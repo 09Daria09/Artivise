@@ -89,6 +89,17 @@
     <None Remove="Images\Impressionism\8.jpg" />
     <None Remove="Images\Impressionism\9.jpg" />
     <None Remove="Images\Impressionism\Impressionism.json" />
+    <None Remove="Images\Strange\1.jpg" />
+    <None Remove="Images\Strange\10.jpg" />
+    <None Remove="Images\Strange\2.jpg" />
+    <None Remove="Images\Strange\3.jpg" />
+    <None Remove="Images\Strange\4.jpg" />
+    <None Remove="Images\Strange\5.jpg" />
+    <None Remove="Images\Strange\6.jpg" />
+    <None Remove="Images\Strange\7.jpg" />
+    <None Remove="Images\Strange\8.jpg" />
+    <None Remove="Images\Strange\9.jpg" />
+    <None Remove="Images\Strange\Strange.json" />
     <None Remove="Images\UkrainianArtists\1.jpg" />
     <None Remove="Images\UkrainianArtists\10.jpg" />
     <None Remove="Images\UkrainianArtists\11.jpg" />
@@ -185,6 +196,16 @@
     <Resource Include="Images\Impressionism\7.jpg" />
     <Resource Include="Images\Impressionism\8.jpg" />
     <Resource Include="Images\Impressionism\9.jpg" />
+    <Resource Include="Images\Strange\1.jpg" />
+    <Resource Include="Images\Strange\10.jpg" />
+    <Resource Include="Images\Strange\2.jpg" />
+    <Resource Include="Images\Strange\3.jpg" />
+    <Resource Include="Images\Strange\4.jpg" />
+    <Resource Include="Images\Strange\5.jpg" />
+    <Resource Include="Images\Strange\6.jpg" />
+    <Resource Include="Images\Strange\7.jpg" />
+    <Resource Include="Images\Strange\8.jpg" />
+    <Resource Include="Images\Strange\9.jpg" />
     <Resource Include="Images\UkrainianArtists\1.jpg" />
     <Resource Include="Images\UkrainianArtists\10.jpg" />
     <Resource Include="Images\UkrainianArtists\11.jpg" />
@@ -201,6 +222,7 @@
     <Resource Include="Images\UkrainianArtists\8.jpg" />
     <Resource Include="Images\UkrainianArtists\9.jpg" />
     <EmbeddedResource Include="Images\Impressionism\Impressionism.json" />
+    <EmbeddedResource Include="Images\Strange\Strange.json" />
     <EmbeddedResource Include="Images\UkrainianArtists\UkrainianArtists.json" />
     <EmbeddedResource Include="user.json" />
   </ItemGroup>

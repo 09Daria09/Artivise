@@ -94,7 +94,7 @@ namespace Artivise.ViewModelGallery
                     SelectedTheme = "UkrainianArtists";
                     break;
                 case 2:
-                    SelectedTheme = "Century";
+                    SelectedTheme = "Strange";
                     break;
                 case 3:
                     SelectedTheme = "ModernAbstract";

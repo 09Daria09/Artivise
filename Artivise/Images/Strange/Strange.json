@@ -1,0 +1,12 @@
+[
+    {"id": 1, "artist": "Rene Magritte", "title_en": "Lovers", "title_ru": "Влюблённые"},
+    {"id": 2, "artist": "Edvard Munch", "title_en": "Scream", "title_ru": "Крик"},
+    {"id": 3, "artist": "Paul Gauguin", "title_en": "Where did we come from? Who are we? Where are we going?", "title_ru": "Откуда мы пришли? Кто мы? Куда мы идем?"},
+    {"id": 4, "artist": "Pablo Picasso", "title_en": "Guernica", "title_ru": "Герника"},
+    {"id": 5, "artist": "Jan van Eyck", "title_en": "Portrait of the Arnolfini couple", "title_ru": "Портрет четы Арнольфини"},
+    {"id": 6, "artist": "Mikhail Vrubel", "title_en": "Demon Seated", "title_ru": "Демон сидящий"},
+    {"id": 7, "artist": "Vasily Vereshchagin", "title_en": "Apotheosis of War", "title_ru": "Апофеоз войны"},
+    {"id": 8, "artist": "Grant Wood", "title_en": "American Gothic", "title_ru": "Американская готика"},
+    {"id": 9, "artist": "Marc Chagall", "title_en": "Walk", "title_ru": "Прогулка"},
+    {"id": 10, "artist": "Gustav Klimt", "title_en": "Three Ages of a Woman", "title_ru": "Три возраста женщины"}
+]

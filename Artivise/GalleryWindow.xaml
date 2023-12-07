@@ -84,7 +84,7 @@
                 <ComboBox SelectedIndex="{Binding SelectedIndex, Mode=TwoWay}" Margin="5" FontStyle="Italic" FontFamily="Comic Sans MS" FontSize="14" Foreground="Black" BorderBrush="White" BorderThickness="1">
                     <ComboBoxItem Content="Impressionism Art" />
                     <ComboBoxItem Content="New Ukrainian Artists"/>
-                    <ComboBoxItem Content="19th Century Paintings"/>
+                    <ComboBoxItem Content="Strange Art"/>
                     <ComboBoxItem Content="Modern Abstract Art"/>
                 </ComboBox>
             </StackPanel>
