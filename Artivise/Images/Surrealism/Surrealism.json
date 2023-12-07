@@ -1,0 +1,10 @@
+[
+    {"id": 1, "artist": "Salvador Dali", "title_en": "The Persistence of Memory", "title_ru": "Постоянство Памяти"},
+    {"id": 2, "artist": "Rene Magritte", "title_en": "The Treachery of Images", "title_ru": "Вероломство Образов"},
+    {"id": 3, "artist": "Frida Kahlo", "title_en": "The Two Fridas", "title_ru": "Две Фриды"},
+    {"id": 4, "artist": "Salvador Dali", "title_en": "The Dream Caused by the Flight of a Bee", "title_ru": "Сон, Вызванный Полётом Пчелы"},
+    {"id": 5, "artist": "Yves Tanguy", "title_en": "Mom, Dad is wounded!", "title_ru": "Мама, Папа Ранен!"},
+    {"id": 6, "artist": "Joan Miró", "title_en": "Harlequin Carnival", "title_ru": "Карнавал Арлекина"},
+    {"id": 7, "artist": "Rene Magritte", "title_en": "Son of Man", "title_ru": "Сын Человеческий"},
+    {"id": 8, "artist": "Max Ernst", "title_en": "The Famous Elephantc", "title_ru": "Знаменитый Слон"}
+]

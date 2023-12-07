@@ -100,6 +100,15 @@
     <None Remove="Images\Strange\8.jpg" />
     <None Remove="Images\Strange\9.jpg" />
     <None Remove="Images\Strange\Strange.json" />
+    <None Remove="Images\Surrealism\1.jpg" />
+    <None Remove="Images\Surrealism\2.jpg" />
+    <None Remove="Images\Surrealism\3.jpg" />
+    <None Remove="Images\Surrealism\4.jpg" />
+    <None Remove="Images\Surrealism\5.jpg" />
+    <None Remove="Images\Surrealism\6.jpg" />
+    <None Remove="Images\Surrealism\7.jpg" />
+    <None Remove="Images\Surrealism\8.jpg" />
+    <None Remove="Images\Surrealism\Surrealism.json" />
     <None Remove="Images\UkrainianArtists\1.jpg" />
     <None Remove="Images\UkrainianArtists\10.jpg" />
     <None Remove="Images\UkrainianArtists\11.jpg" />
@@ -206,6 +215,14 @@
     <Resource Include="Images\Strange\7.jpg" />
     <Resource Include="Images\Strange\8.jpg" />
     <Resource Include="Images\Strange\9.jpg" />
+    <Resource Include="Images\Surrealism\1.jpg" />
+    <Resource Include="Images\Surrealism\2.jpg" />
+    <Resource Include="Images\Surrealism\3.jpg" />
+    <Resource Include="Images\Surrealism\4.jpg" />
+    <Resource Include="Images\Surrealism\5.jpg" />
+    <Resource Include="Images\Surrealism\6.jpg" />
+    <Resource Include="Images\Surrealism\7.jpg" />
+    <Resource Include="Images\Surrealism\8.jpg" />
     <Resource Include="Images\UkrainianArtists\1.jpg" />
     <Resource Include="Images\UkrainianArtists\10.jpg" />
     <Resource Include="Images\UkrainianArtists\11.jpg" />
@@ -223,6 +240,7 @@
     <Resource Include="Images\UkrainianArtists\9.jpg" />
     <EmbeddedResource Include="Images\Impressionism\Impressionism.json" />
     <EmbeddedResource Include="Images\Strange\Strange.json" />
+    <EmbeddedResource Include="Images\Surrealism\Surrealism.json" />
     <EmbeddedResource Include="Images\UkrainianArtists\UkrainianArtists.json" />
     <EmbeddedResource Include="user.json" />
   </ItemGroup>

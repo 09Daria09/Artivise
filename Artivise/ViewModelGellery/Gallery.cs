@@ -97,7 +97,7 @@ namespace Artivise.ViewModelGallery
                     SelectedTheme = "Strange";
                     break;
                 case 3:
-                    SelectedTheme = "ModernAbstract";
+                    SelectedTheme = "Surrealism";
                     break;
                 default:
                     SelectedTheme = "Impressionism";

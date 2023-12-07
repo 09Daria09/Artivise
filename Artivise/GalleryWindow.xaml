@@ -85,7 +85,7 @@
                     <ComboBoxItem Content="Impressionism Art" />
                     <ComboBoxItem Content="New Ukrainian Artists"/>
                     <ComboBoxItem Content="Strange Art"/>
-                    <ComboBoxItem Content="Modern Abstract Art"/>
+                    <ComboBoxItem Content="Surrealism Art"/>
                 </ComboBox>
             </StackPanel>
 
