@@ -36,7 +36,6 @@ namespace Artivise.Services
             {
                 if (resourceFullName != null)
                 {
-                    // Если ресурс найден в сборке, копируем его содержимое
                     using (var stream = assembly.GetManifestResourceStream(resourceFullName))
                     using (var reader = new StreamReader(stream))
                     using (var writer = new StreamWriter(localFilePath))
@@ -46,7 +45,6 @@ namespace Artivise.Services
                 }
                 else
                 {
-                    // Если ресурса нет, создаем файл с начальным содержимым
                     File.WriteAllText(localFilePath, "[]");
                 }
             }

@@ -32,7 +32,7 @@
                 </TextBlock.Effect>
             </TextBlock>
 
-            <ComboBox SelectedItem="{Binding SelectedTheme, Mode=TwoWay}" Margin="5" FontStyle="Italic" FontFamily="Comic Sans MS" FontSize="21" Foreground="Black" BorderBrush="White" BorderThickness="1">
+            <ComboBox SelectedIndex="{Binding SelectedIndex, Mode=TwoWay}" Margin="5" FontStyle="Italic" FontFamily="Comic Sans MS" FontSize="21" Foreground="Black" BorderBrush="White" BorderThickness="1">
                 <ComboBoxItem Content="Impressionism Art" />
                 <ComboBoxItem Content="New Ukrainian Artists"/>
                 <ComboBoxItem Content="19th Century Paintings"/>
