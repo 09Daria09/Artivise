@@ -198,6 +198,7 @@ namespace Artivise.ViewModelGallery
             {
                 _images = value;
                 OnPropertyChanged(nameof(Images));
+                OnPropertyChanged(nameof(ImageCount));
             }
         }
         public int ImageCount
@@ -239,7 +240,6 @@ namespace Artivise.ViewModelGallery
         {
             Images.Clear();
 
-
             var assembly = Assembly.GetExecutingAssembly();
             var resourcePath = $"{assembly.GetName().Name}.Images.{SelectedTheme}.{SelectedTheme}.json";
 
@@ -264,6 +264,7 @@ namespace Artivise.ViewModelGallery
             {
                 CurrentImageIndex = 0;
             }
+            OnPropertyChanged(nameof(ImageCount));
         }
 
         private Dictionary<int, (string artist, string title_en, string title_ru)> LoadImageInfo(Assembly assembly, string resourcePath)

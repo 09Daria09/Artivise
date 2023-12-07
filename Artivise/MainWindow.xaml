@@ -38,8 +38,11 @@
             <StackPanel>
                 <TextBlock Text="Welcome to Artivise" FontSize="18" Margin="5" HorizontalAlignment="Center"/>
 
+                <TextBlock Text="UserName" FontSize="12" Padding="3" />
+
                 <TextBox Text="{Binding UserName}" Margin="5" Height="30" FontSize="14" Padding="3" />
 
+                <TextBlock Text="Password" FontSize="12" Padding="3" />
                 <PasswordBox x:Name="PasswordBox" Margin="5" Height="30" FontSize="14" Padding="3" Foreground="Black" FontFamily="Segoe UI" PasswordChanged="PasswordBox_PasswordChanged"/>
 
                 <Button Content="Log in" Margin="5" Height="30" FontSize="14" Padding="3" Background="#FF4CAF50" Foreground="White"
