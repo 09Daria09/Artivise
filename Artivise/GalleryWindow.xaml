@@ -46,9 +46,7 @@
             <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Popup IsOpen="{Binding IsSidebarVisible}" Placement="Left" PlacementTarget="{Binding ElementName=sidebarButton}">
-            <local:SidebarControl/>
-        </Popup>
+       
         <StackPanel Grid.Column="0" Background="#FF4CAF50" Margin="10">
             <Image Source="{Binding UserPhoto}" Height="150" Width="150" Margin="10" Stretch="Fill">
                 <Image.Effect>
@@ -69,15 +67,27 @@
             <RadioButton Content="Poor (2)" IsChecked="{Binding CurrentRating, Converter={StaticResource RatingToBooleanConverter}, ConverterParameter=2}" Margin="5" FontFamily="Comic Sans MS" FontSize="12" Foreground="White"/>
             <RadioButton Content="Very Poor (1)" IsChecked="{Binding CurrentRating, Converter={StaticResource RatingToBooleanConverter}, ConverterParameter=1}" Margin="5" FontFamily="Comic Sans MS" FontSize="12" Foreground="White"/>
 
-            <Button x:Name="sidebarButton" Content="Choose Theme" Command="{Binding ToggleSidebarCommand}" Margin="5" 
-                Background="#FF4CAF50" Foreground="White" FontSize="14" FontWeight="Bold" 
-                Padding="10" FontFamily="Comic Sans MS"
-                Cursor="Hand">
-                <Button.Effect>
-                    <DropShadowEffect Color="Black" Direction="320" ShadowDepth="0" BlurRadius="15"/>
-                </Button.Effect>
-            </Button>
             <TextBlock Text="{Binding CurrentImageRating, StringFormat='Current Rating: {0:F1}'}" FontWeight="Bold" Margin="10" FontFamily="Comic Sans MS" FontSize="14" Foreground="White"/>
+            <StackPanel Margin="3">
+                <TextBlock Text="Select a theme:" 
+               FontWeight="Bold" 
+               FontStyle="Italic" 
+               FontFamily="Comic Sans MS" 
+               FontSize="14" 
+               Margin="5" 
+               Foreground="White">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Black" Direction="320" ShadowDepth="0" BlurRadius="10"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+
+                <ComboBox SelectedIndex="{Binding SelectedIndex, Mode=TwoWay}" Margin="5" FontStyle="Italic" FontFamily="Comic Sans MS" FontSize="14" Foreground="Black" BorderBrush="White" BorderThickness="1">
+                    <ComboBoxItem Content="Impressionism Art" />
+                    <ComboBoxItem Content="New Ukrainian Artists"/>
+                    <ComboBoxItem Content="19th Century Paintings"/>
+                    <ComboBoxItem Content="Modern Abstract Art"/>
+                </ComboBox>
+            </StackPanel>
 
         </StackPanel>
         <Border Grid.Column="1" Background="#FFEEFFEE" Margin="10">

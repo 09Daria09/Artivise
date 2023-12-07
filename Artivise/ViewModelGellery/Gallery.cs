@@ -60,7 +60,7 @@ namespace Artivise.ViewModelGallery
         #region дефолтный конструктор
         public Gallery()
         {
-
+            _images = new ObservableCollection<ImageData>();
         }
         #endregion
 
@@ -237,7 +237,8 @@ namespace Artivise.ViewModelGallery
         }
         private void LoadImagesForTheme()
         {
-            _images = new ObservableCollection<ImageData>();
+            Images.Clear();
+
 
             var assembly = Assembly.GetExecutingAssembly();
             var resourcePath = $"{assembly.GetName().Name}.Images.{SelectedTheme}.{SelectedTheme}.json";

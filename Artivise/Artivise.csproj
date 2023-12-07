@@ -89,6 +89,22 @@
     <None Remove="Images\Impressionism\8.jpg" />
     <None Remove="Images\Impressionism\9.jpg" />
     <None Remove="Images\Impressionism\Impressionism.json" />
+    <None Remove="Images\UkrainianArtists\1.jpg" />
+    <None Remove="Images\UkrainianArtists\10.jpg" />
+    <None Remove="Images\UkrainianArtists\11.jpg" />
+    <None Remove="Images\UkrainianArtists\12.jpg" />
+    <None Remove="Images\UkrainianArtists\13.jpg" />
+    <None Remove="Images\UkrainianArtists\14.jpg" />
+    <None Remove="Images\UkrainianArtists\15.jpg" />
+    <None Remove="Images\UkrainianArtists\2.jpg" />
+    <None Remove="Images\UkrainianArtists\3.jpg" />
+    <None Remove="Images\UkrainianArtists\4.jpg" />
+    <None Remove="Images\UkrainianArtists\5.jpg" />
+    <None Remove="Images\UkrainianArtists\6.jpg" />
+    <None Remove="Images\UkrainianArtists\7.jpg" />
+    <None Remove="Images\UkrainianArtists\8.jpg" />
+    <None Remove="Images\UkrainianArtists\9.jpg" />
+    <None Remove="Images\UkrainianArtists\UkrainianArtists.json" />
     <None Remove="user.json" />
   </ItemGroup>
 
@@ -169,7 +185,23 @@
     <Resource Include="Images\Impressionism\7.jpg" />
     <Resource Include="Images\Impressionism\8.jpg" />
     <Resource Include="Images\Impressionism\9.jpg" />
+    <Resource Include="Images\UkrainianArtists\1.jpg" />
+    <Resource Include="Images\UkrainianArtists\10.jpg" />
+    <Resource Include="Images\UkrainianArtists\11.jpg" />
+    <Resource Include="Images\UkrainianArtists\12.jpg" />
+    <Resource Include="Images\UkrainianArtists\13.jpg" />
+    <Resource Include="Images\UkrainianArtists\14.jpg" />
+    <Resource Include="Images\UkrainianArtists\15.jpg" />
+    <Resource Include="Images\UkrainianArtists\2.jpg" />
+    <Resource Include="Images\UkrainianArtists\3.jpg" />
+    <Resource Include="Images\UkrainianArtists\4.jpg" />
+    <Resource Include="Images\UkrainianArtists\5.jpg" />
+    <Resource Include="Images\UkrainianArtists\6.jpg" />
+    <Resource Include="Images\UkrainianArtists\7.jpg" />
+    <Resource Include="Images\UkrainianArtists\8.jpg" />
+    <Resource Include="Images\UkrainianArtists\9.jpg" />
     <EmbeddedResource Include="Images\Impressionism\Impressionism.json" />
+    <EmbeddedResource Include="Images\UkrainianArtists\UkrainianArtists.json" />
     <EmbeddedResource Include="user.json" />
   </ItemGroup>
 
